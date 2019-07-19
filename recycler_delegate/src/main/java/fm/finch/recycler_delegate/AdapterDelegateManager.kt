@@ -1,4 +1,4 @@
-package fm.finch.recyclerdelegate.delegate
+package fm.finch.recycler_delegate
 
 import android.support.v4.util.SparseArrayCompat
 
@@ -8,11 +8,11 @@ class AdapterDelegateManager{
 
     fun addDelegate(delegate: AdapterDelegate) = delegates.put(delegates.size(), delegate)
 
-    fun getDelegate(viewType: Int): AdapterDelegate = delegates[viewType]
+    fun getDelegate(viewType: Int): AdapterDelegate = delegates[viewType]!!
 
-    fun getItemViewType(postModel: PostModel): Int{
+    fun getItemViewType(postModel: ViewData): Int{
         for (i in 0 until delegates.size()){
-            if (delegates[i].isValidType(postModel)){
+            if (delegates[i]!!.isValidType(postModel)){
                 return delegates.keyAt(i)
             }
         }

@@ -1,4 +1,4 @@
-package fm.finch.recyclerdelegate.delegate
+package fm.finch.recycler_delegate
 
 import android.view.ViewGroup
 
@@ -6,5 +6,5 @@ interface AdapterDelegate{
 
     fun onCreateViewHolder(parent: ViewGroup): BaseViewHolder
 
-    fun isValidType(postModel: PostModel): Boolean
+    fun isValidType(postModel: ViewData): Boolean
 }

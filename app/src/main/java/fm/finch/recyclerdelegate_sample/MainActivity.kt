@@ -1,9 +1,9 @@
-package fm.finch.recyclerdelegate
+package fm.finch.recyclerdelegate_sample
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import fm.finch.recyclerdelegate.delegate.PostAdapter
-import fm.finch.recyclerdelegate.posts.*
+import fm.finch.recycler_delegate.PostAdapter
+import fm.finch.recyclerdelegate_sample.posts.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

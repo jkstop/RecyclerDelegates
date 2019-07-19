@@ -1,10 +1,10 @@
-package fm.finch.recyclerdelegate.delegate
+package fm.finch.recycler_delegate
 
 import android.support.v7.util.DiffUtil
 
 class DiffCallback(
-        val old: List<PostModel>,
-        val new: List<PostModel>
+    val old: List<ViewData>,
+    val new: List<ViewData>
 ) : DiffUtil.Callback(){
 
     override fun getOldListSize(): Int = old.size

@@ -1,4 +1,4 @@
-package fm.finch.recyclerdelegate
+package fm.finch.recyclerdelegate_sample
 
 import org.junit.Test
 
