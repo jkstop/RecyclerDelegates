@@ -10,5 +10,5 @@ abstract class BaseViewHolder : RecyclerView.ViewHolder{
     constructor(parent: ViewGroup, layoutId: Int) : super(LayoutInflater.from(parent.context).inflate(layoutId, parent, false))
     constructor(view: View) : super(view)
 
-    abstract fun bind(model: ViewData)
+    abstract fun bind(viewData: ViewData)
 }

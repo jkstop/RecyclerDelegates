@@ -10,13 +10,13 @@ class AdapterDelegateManager{
 
     fun getDelegate(viewType: Int): AdapterDelegate = delegates[viewType]!!
 
-    fun getItemViewType(postModel: ViewData): Int{
+    fun getItemViewType(viewData: ViewData): Int{
         for (i in 0 until delegates.size()){
-            if (delegates[i]!!.isValidType(postModel)){
+            if (delegates[i]!!.isValidType(viewData)){
                 return delegates.keyAt(i)
             }
         }
 
-        throw NullPointerException("Delegate not found for $postModel")
+        throw NullPointerException("Delegate not found for $viewData")
     }
 }

@@ -6,5 +6,5 @@ interface AdapterDelegate{
 
     fun onCreateViewHolder(parent: ViewGroup): BaseViewHolder
 
-    fun isValidType(postModel: ViewData): Boolean
+    fun isValidType(viewData: ViewData): Boolean
 }
