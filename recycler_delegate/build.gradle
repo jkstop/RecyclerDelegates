@@ -1,9 +1,25 @@
+apply plugin: 'com.novoda.bintray-release'
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
+publish {
+
+    def groupProjectID = 'fm.finch.recycler_delegate'
+    def artifactProjectID = 'recycler_delegate'
+    def publishVersionID = '1.0.0'
+
+    userOrg = 'jkstop'
+    repoName = 'recycler-delegates'
+    groupId = groupProjectID
+    artifactId = artifactProjectID
+    publishVersion = publishVersionID
+    desc = 'Recycler view adapter delegates'
+    website = 'https://github.com/jkstop/RecyclerDelegates'
+
+}
+
 android {
     compileSdkVersion 28
-
 
     defaultConfig {
         minSdkVersion 21
